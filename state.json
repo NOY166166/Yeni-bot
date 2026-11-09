@@ -1,0 +1,13 @@
+{
+  "cash": 100000.0,
+  "pos": {},
+  "pending": {
+    "sell": [],
+    "buy": []
+  },
+  "cool": {},
+  "day_i": 1,
+  "last_date": "2026-11-06",
+  "last_close": {},
+  "trades": []
+}
