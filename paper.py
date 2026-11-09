@@ -3,8 +3,8 @@ import os
 
 import pandas as pd
 
-from .engine import Engine
-from .strategy import get_features, make_regime
+from engine import Engine
+from strategy import get_features, make_regime
 
 
 def run_paper(cfg, data, bench, state_path="state.json"):

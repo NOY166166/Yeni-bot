@@ -1,7 +1,7 @@
 """Özellik/sinyal üretimi. Tüm göstergeler nedensel (geleceği görmez)."""
 import pandas as pd
 
-from .indicators import adx, atr, ema, macd, rsi, sma
+from indicators import adx, atr, ema, macd, rsi, sma
 
 _CACHE = {}
 

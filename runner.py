@@ -3,9 +3,9 @@ from dataclasses import replace
 
 import pandas as pd
 
-from .analytics import perf
-from .engine import Engine
-from .strategy import get_features, make_regime
+from analytics import perf
+from engine import Engine
+from strategy import get_features, make_regime
 
 GRID = dict(fast=[10, 20], slow=[50, 100], atr_stop_mult=[2.0, 3.0], min_score=[4, 5])
 
