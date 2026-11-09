@@ -1,0 +1,28 @@
+name: bist-paper-bot
+on:
+  schedule:
+    - cron: "0 16 * * 1-5"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - name: Paper trade
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.8725734662:AAHB6z2mtHFFyX-sfZnmuQqxKO6xJDOnU30 }}
+          TELEGRAM_CHAT_ID: ${{ secrets.6716614611}}
+        run: python main.py paper --notify
+      - name: Save state
+        run: |
+          git config user.name "bist-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add state.json
+          git diff --staged --quiet || git commit -m "state"
+          git push
