@@ -1,7 +1,8 @@
 {
  "date": "2026-11-13",
  "sent": [
-  "FROTO.IS"
+  "FROTO.IS",
+  "TCKRC.IS"
  ],
  "open": {
   "FROTO.IS": {
@@ -9,6 +10,12 @@
    "stop": 72.9,
    "target": 76.85,
    "since": "2026-11-13T13:30:00+03:00"
+  },
+  "TCKRC.IS": {
+   "entry": 128.5,
+   "stop": 124.9,
+   "target": 135.6,
+   "since": "2026-11-13T14:30:00+03:00"
   }
  }
 }
