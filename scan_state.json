@@ -1,7 +1,8 @@
 {
  "date": "2026-11-18",
  "sent": [
-  "MEGMT.IS"
+  "MEGMT.IS",
+  "VEYAS.IS"
  ],
  "open": {
   "MEGMT.IS": {
@@ -9,6 +10,12 @@
    "stop": 3.77,
    "target": 4.11,
    "since": "2026-11-18T12:30:00+03:00"
+  },
+  "VEYAS.IS": {
+   "entry": 78.35,
+   "stop": 75.7,
+   "target": 83.55,
+   "since": "2026-11-18T13:30:00+03:00"
   }
  }
 }
